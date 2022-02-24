@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vouchers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.dreamtravel.by/vouchers"
+        xsi:schemaLocation="http://www.dreamtravel.by/vouchers vouchers.xsd">
+
+<voucher id="01">
+    <typeOfVoucher>Weekend pass</typeOfVoucher>
+        <country>Russia</country>
+        <city>Moscow</city>
+        <numberDays>2</numberDays>
+        <numberNights>1</numberNights>
+        <transport>bus</transport>
+        <hotelCharacteristic>
+            <hotelStars>4</hotelStars>
+            <hotelFood>NO</hotelFood>
+            <hotelRoom>single</hotelRoom>
+            <tv>yes</tv>
+            <airConditioner>yes</airConditioner>
+        </hotelCharacteristic>
+</voucher>
+
+<voucher id="02" >
+            <typeOfVoucher>Weekend pass</typeOfVoucher>
+            <country>Russia</country>
+            <city>Saint-Petersburg</city>
+            <numberDays>3</numberDays>
+            <numberNights>2</numberNights>
+            <transport>bus</transport>
+            <hotelCharacteristic>
+                <hotelStars>5</hotelStars>
+                <hotelFood>FB</hotelFood>
+                <hotelRoom>double</hotelRoom>
+                <tv>yes</tv>
+                <airConditioner>no</airConditioner>
+            </hotelCharacteristic>
+</voucher>
+
+<voucher id="03" >
+        <typeOfVoucher>Tour</typeOfVoucher>
+        <country>Belarus</country>
+        <city>Minsk-Belovezhskaya Pushcha-Minsk</city>
+        <numberDays>2</numberDays>
+        <numberNights>1</numberNights>
+        <transport>bus</transport>
+        <hotelCharacteristic>
+            <hotelStars>4</hotelStars>
+            <hotelFood>BB</hotelFood>
+            <hotelRoom>double</hotelRoom>
+            <tv>yes</tv>
+            <airConditioner>no</airConditioner>
+        </hotelCharacteristic>
+</voucher>
+
+<voucher id="04">
+    <typeOfVoucher>Holidays</typeOfVoucher>
+        <country>Switzerland</country>
+        <city>Zurich</city>
+        <numberDays>7</numberDays>
+        <numberNights>6</numberNights>
+        <transport>airplane</transport>
+        <hotelCharacteristic>
+            <hotelStars>5</hotelStars>
+            <hotelFood>AI</hotelFood>
+            <hotelRoom>double</hotelRoom>
+            <tv>yes</tv>
+            <airConditioner>yes</airConditioner>
+        </hotelCharacteristic>
+</voucher>
+
+<voucher id="05" >
+    <typeOfVoucher>Holidays</typeOfVoucher>
+        <country>Egypt</country>
+        <city>Sharm-El-Sheikh</city>
+        <numberDays>10</numberDays>
+        <numberNights>9</numberNights>
+        <transport>airplane</transport>
+        <hotelCharacteristic>
+            <hotelStars>5</hotelStars>
+            <hotelFood>AI</hotelFood>
+            <hotelRoom>triple</hotelRoom>
+            <tv>yes</tv>
+            <airConditioner>yes</airConditioner>
+        </hotelCharacteristic>
+    </voucher>
+</vouchers>
