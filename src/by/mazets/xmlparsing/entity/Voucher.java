@@ -1,4 +1,4 @@
-package main.xmlparsing.entity;
+package by.mazets.xmlparsing.entity;
 
 import java.time.LocalDate;
 

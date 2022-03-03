@@ -1,5 +1,5 @@
-package main.xmlparsing.builder;
-import main.xmlparsing.exception.VoucherException;
+package by.mazets.xmlparsing.builder;
+import by.mazets.xmlparsing.exception.VoucherException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

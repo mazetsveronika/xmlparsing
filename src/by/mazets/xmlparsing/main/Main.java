@@ -1,11 +1,11 @@
-package main.xmlparsing.main;
+package by.mazets.xmlparsing.main;
 import java.io.*;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import main.xmlparsing.handler.ConsoleVoucherHandler;
-import main.xmlparsing.handler.VoucherErrorHandler;
+import by.mazets.xmlparsing.handler.ConsoleVoucherHandler;
+import by.mazets.xmlparsing.handler.VoucherErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 

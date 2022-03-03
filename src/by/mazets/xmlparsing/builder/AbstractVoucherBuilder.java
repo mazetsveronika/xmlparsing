@@ -1,5 +1,5 @@
-package main.xmlparsing.builder;
-import main.xmlparsing.entity.Voucher;
+package by.mazets.xmlparsing.builder;
+import by.mazets.xmlparsing.entity.Voucher;
 
 import java.util.HashSet;
 import java.util.Set;

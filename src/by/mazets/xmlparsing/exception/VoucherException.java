@@ -1,4 +1,4 @@
-package main.xmlparsing.exception;
+package by.mazets.xmlparsing.exception;
 import java.lang.Exception;
 
 public class VoucherException extends Exception{

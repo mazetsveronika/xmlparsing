@@ -1,8 +1,8 @@
 package test.mazets.xmlparsing.builder;
 
-import main.xmlparsing.builder.VoucherDomBuilder;
-import main.xmlparsing.entity.Voucher;
-import main.xmlparsing.exception.VoucherException;
+import by.mazets.xmlparsing.builder.VoucherDomBuilder;
+import by.mazets.xmlparsing.entity.Voucher;
+import by.mazets.xmlparsing.exception.VoucherException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

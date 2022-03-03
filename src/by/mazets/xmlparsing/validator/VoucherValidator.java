@@ -1,6 +1,6 @@
-package main.xmlparsing.validator;
+package by.mazets.xmlparsing.validator;
 
-import main.xmlparsing.exception.VoucherException;
+import by.mazets.xmlparsing.exception.VoucherException;
 
 public interface VoucherValidator {
 

@@ -1,8 +1,8 @@
-package main.xmlparsing.validator.impl;
+package by.mazets.xmlparsing.validator.impl;
 
-import main.xmlparsing.exception.VoucherException;
-import main.xmlparsing.handler.VoucherErrorHandler;
-import main.xmlparsing.validator.VoucherValidator;
+import by.mazets.xmlparsing.exception.VoucherException;
+import by.mazets.xmlparsing.handler.VoucherErrorHandler;
+import by.mazets.xmlparsing.validator.VoucherValidator;
 import org.xml.sax.SAXException;
 import javax.xml.XMLConstants;
 import javax.xml.transform.Source;

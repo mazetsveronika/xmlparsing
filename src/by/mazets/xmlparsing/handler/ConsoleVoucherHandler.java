@@ -1,4 +1,4 @@
-package main.xmlparsing.handler;
+package by.mazets.xmlparsing.handler;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 

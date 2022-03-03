@@ -1,6 +1,6 @@
-package main.xmlparsing.builder;
-import main.xmlparsing.entity.Voucher;
-import main.xmlparsing.handler.VoucherXmlTag;
+package by.mazets.xmlparsing.builder;
+import by.mazets.xmlparsing.entity.Voucher;
+import by.mazets.xmlparsing.handler.VoucherXmlTag;
 
 import java.io.File;
 import java.io.FileInputStream;

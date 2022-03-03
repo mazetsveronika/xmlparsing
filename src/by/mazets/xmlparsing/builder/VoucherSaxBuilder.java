@@ -1,7 +1,7 @@
-package main.xmlparsing.builder;
-import main.xmlparsing.entity.Voucher;
-import main.xmlparsing.handler.VoucherErrorHandler;
-import main.xmlparsing.handler.VoucherHandler;
+package by.mazets.xmlparsing.builder;
+import by.mazets.xmlparsing.entity.Voucher;
+import by.mazets.xmlparsing.handler.VoucherErrorHandler;
+import by.mazets.xmlparsing.handler.VoucherHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import javax.xml.parsers.ParserConfigurationException;

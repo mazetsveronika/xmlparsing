@@ -1,6 +1,6 @@
-package main.xmlparsing.handler;
+package by.mazets.xmlparsing.handler;
 
-import main.xmlparsing.entity.Voucher;
+import by.mazets.xmlparsing.entity.Voucher;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 

@@ -1,4 +1,4 @@
-package main.xmlparsing.builder;
+package by.mazets.xmlparsing.builder;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -6,7 +6,8 @@ import java.util.Set;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import main.xmlparsing.entity.Voucher;
+
+import by.mazets.xmlparsing.entity.Voucher;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

@@ -1,4 +1,4 @@
-package main.xmlparsing.handler;
+package by.mazets.xmlparsing.handler;
 
 public enum VoucherXmlTag {
         VOUCHERS("vouchers"),

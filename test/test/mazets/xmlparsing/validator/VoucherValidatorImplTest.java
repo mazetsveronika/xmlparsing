@@ -1,6 +1,6 @@
 package test.mazets.xmlparsing.validator;
-import main.xmlparsing.validator.impl.VoucherValidatorImpl;
-import main.xmlparsing.exception.VoucherException;
+import by.mazets.xmlparsing.validator.impl.VoucherValidatorImpl;
+import by.mazets.xmlparsing.exception.VoucherException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;

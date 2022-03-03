@@ -1,4 +1,4 @@
-package main.xmlparsing.handler;
+package by.mazets.xmlparsing.handler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.ErrorHandler;
