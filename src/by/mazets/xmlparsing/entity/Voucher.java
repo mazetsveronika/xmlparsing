@@ -111,6 +111,44 @@ public class Voucher{
         this.hotelCharacteristic = hotelCharacteristic;
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Voucher)) return false;
+
+        Voucher voucher = (Voucher) o;
+
+        if (getId() != null ? !getId().equals(voucher.getId()) : voucher.getId() != null) return false;
+        if (getTypeOfVoucher() != null ? !getTypeOfVoucher().equals(voucher.getTypeOfVoucher()) : voucher.getTypeOfVoucher() != null)
+            return false;
+        if (getCountry() != null ? !getCountry().equals(voucher.getCountry()) : voucher.getCountry() != null)
+            return false;
+        if (getCity() != null ? !getCity().equals(voucher.getCity()) : voucher.getCity() != null) return false;
+        if (getDeparture() != null ? !getDeparture().equals(voucher.getDeparture()) : voucher.getDeparture() != null)
+            return false;
+        if (getNumberDays() != null ? !getNumberDays().equals(voucher.getNumberDays()) : voucher.getNumberDays() != null)
+            return false;
+        if (getNumberNights() != null ? !getNumberNights().equals(voucher.getNumberNights()) : voucher.getNumberNights() != null)
+            return false;
+        if (getTransport() != null ? !getTransport().equals(voucher.getTransport()) : voucher.getTransport() != null)
+            return false;
+        return getHotelCharacteristic() != null ? getHotelCharacteristic().equals(voucher.getHotelCharacteristic()) : voucher.getHotelCharacteristic() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getId() != null ? getId().hashCode() : 0;
+        result = 31 * result + (getTypeOfVoucher() != null ? getTypeOfVoucher().hashCode() : 0);
+        result = 31 * result + (getCountry() != null ? getCountry().hashCode() : 0);
+        result = 31 * result + (getCity() != null ? getCity().hashCode() : 0);
+        result = 31 * result + (getDeparture() != null ? getDeparture().hashCode() : 0);
+        result = 31 * result + (getNumberDays() != null ? getNumberDays().hashCode() : 0);
+        result = 31 * result + (getNumberNights() != null ? getNumberNights().hashCode() : 0);
+        result = 31 * result + (getTransport() != null ? getTransport().hashCode() : 0);
+        result = 31 * result + (getHotelCharacteristic() != null ? getHotelCharacteristic().hashCode() : 0);
+        return result;
+    }
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("\nID: ");
@@ -123,7 +161,6 @@ public class Voucher{
         sb.append("\nTransport: ").append(transport ).append(hotelCharacteristic);
         return sb.toString();
     }
-
 
     public static class HotelCharacteristic {
             private Integer hotelStars;
@@ -184,6 +221,32 @@ public class Voucher{
                 this.airConditioner = airConditioner;
             }
 
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof HotelCharacteristic)) return false;
+
+            HotelCharacteristic that = (HotelCharacteristic) o;
+
+            if (getHotelStars() != null ? !getHotelStars().equals(that.getHotelStars()) : that.getHotelStars() != null)
+                return false;
+            if (getHotelFood() != null ? !getHotelFood().equals(that.getHotelFood()) : that.getHotelFood() != null)
+                return false;
+            if (getHotelRoom() != null ? !getHotelRoom().equals(that.getHotelRoom()) : that.getHotelRoom() != null)
+                return false;
+            if (getTv() != null ? !getTv().equals(that.getTv()) : that.getTv() != null) return false;
+            return getAirConditioner() != null ? getAirConditioner().equals(that.getAirConditioner()) : that.getAirConditioner() == null;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = getHotelStars() != null ? getHotelStars().hashCode() : 0;
+            result = 31 * result + (getHotelFood() != null ? getHotelFood().hashCode() : 0);
+            result = 31 * result + (getHotelRoom() != null ? getHotelRoom().hashCode() : 0);
+            result = 31 * result + (getTv() != null ? getTv().hashCode() : 0);
+            result = 31 * result + (getAirConditioner() != null ? getAirConditioner().hashCode() : 0);
+            return result;
+        }
 
         @Override
         public String toString() {

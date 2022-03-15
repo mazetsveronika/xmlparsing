@@ -11,7 +11,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jar_files (4)/slf4j-api-1.7.25.jar!/" />
+          <root url="jar://E:/EPAM/utilities/apache-log4j-2.17.1-bin/log4j-core-2.17.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -20,7 +20,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jar_files (4)/slf4j-nop-1.7.25.jar!/" />
+          <root url="jar://E:/EPAM/utilities/apache-log4j-2.17.1-bin/log4j-api-2.17.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -29,7 +29,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jar_files (2)/testng-7.5.jar!/" />
+          <root url="jar://E:/EPAM/utilities/jar_files (2)/testng-7.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -38,7 +38,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jar_files (2)/jcommander-1.78.jar!/" />
+          <root url="jar://E:/EPAM/utilities/jar_files (2)/jcommander-1.78.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -47,7 +47,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/apache-log4j-2.17.1-bin/log4j-api-2.17.1.jar!/" />
+          <root url="jar://E:/EPAM/utilities/jar_files (4)/slf4j-api-1.7.25.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -56,7 +56,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/apache-log4j-2.17.1-bin/log4j-core-2.17.1.jar!/" />
+          <root url="jar://E:/EPAM/utilities/jar_files (4)/slf4j-nop-1.7.25.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

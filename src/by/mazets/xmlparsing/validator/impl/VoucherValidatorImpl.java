@@ -16,7 +16,7 @@ import java.net.URL;
 
 public class VoucherValidatorImpl implements VoucherValidator {
 
-    private static final String SCHEMA_NAME = "data/vouchers.xsd";
+    private static final String SCHEMA_NAME = "resources/vouchers.xsd";
     private static VoucherValidatorImpl instance;
 
     private VoucherValidatorImpl() {
@@ -32,22 +32,28 @@ public class VoucherValidatorImpl implements VoucherValidator {
     @Override
     public boolean validateXML(String xmlFile) throws VoucherException {
 
-        ClassLoader loader = VoucherValidatorImpl.class.getClassLoader();
-        URL resource = loader.getResource(SCHEMA_NAME);
-        File schemaFile = new File(resource.getFile());
-
-        URL resourceXML = loader.getResource(xmlFile);
-        String xmlPath = new File(resourceXML.getFile()).getPath();
-        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        String xmlPath = "";
 
         try {
+            ClassLoader loader = this.getClass().getClassLoader();
+
+            URL resource = loader.getResource(SCHEMA_NAME);
+            File schemaFile = new File(resource.getFile());
+            SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(schemaFile);
             Validator validator = schema.newValidator();
+
+            URL resourceXML = loader.getResource(xmlFile);
+            xmlPath = new File(resourceXML.getFile()).getPath();
             Source source = new StreamSource(xmlPath);
+
             validator.setErrorHandler(new VoucherErrorHandler());
             validator.validate(source);
+
+        } catch (NullPointerException e){
+            throw new VoucherException(e.getMessage(), e);
         } catch (IOException e) {
-            throw new VoucherException("Can't open file: " + xmlPath, e);
+            throw new VoucherException("Cannot open file: " + xmlPath, e);
         } catch (SAXException e) {
             return false;
         }
@@ -55,4 +61,5 @@ public class VoucherValidatorImpl implements VoucherValidator {
         return true;
     }
 }
+
 

@@ -7,8 +7,8 @@ import static org.testng.Assert.*;
 
 public class VoucherValidatorImplTest {
 
-        private static final String XML_FILE = "resources/data/vouchers.xml";
-        private static final String XML_FILE_WRONG = "resources/data/vouchers_wrong.xml";
+        private static final String XML_FILE = "resources/vouchers.xml";
+        private static final String XML_FILE_WRONG = "resources/vouchers_wrong.xml";
         private VoucherValidatorImpl validator;
 
         @BeforeClass

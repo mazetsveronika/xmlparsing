@@ -10,9 +10,9 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
 
-public class Main {
-    public static void main(String[] args) {
-  /*      String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
+//public class Main {
+    //public static void main(String[] args) {
+/*     String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         String fileName = "src/resources/data/vouchers.xml";
         String schemaName = "src/resources/data/vouchers.xsd";
         SchemaFactory factory = SchemaFactory.newInstance(language);
@@ -35,14 +35,14 @@ public class Main {
 
    */
 
-        try {
+      /*  try {
             // SAX parser creating & configuring
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
             XMLReader reader = parser.getXMLReader();
             reader.setContentHandler(new ConsoleVoucherHandler());
             reader.setErrorHandler(new VoucherErrorHandler());
-            reader.parse("src/resources/data/vouchers.xml");
+            reader.parse("resources/vouchers.xml");
         } catch (SAXException | IOException | ParserConfigurationException e) {
             e.printStackTrace();
         }
@@ -50,6 +50,11 @@ public class Main {
 
     }
 }
+
+
+       */
+
+
 
 
 /*
@@ -118,6 +123,8 @@ public class Main {
         }
 
  */
+
+
 
 
 

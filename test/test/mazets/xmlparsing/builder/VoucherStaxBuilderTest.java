@@ -1,7 +1,6 @@
 package test.mazets.xmlparsing.builder;
 import by.mazets.xmlparsing.builder.VoucherStaxBuilder;
 import by.mazets.xmlparsing.entity.Voucher;
-import by.mazets.xmlparsing.exception.VoucherException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.time.LocalDate;
@@ -12,7 +11,7 @@ import static org.testng.Assert.*;
 
 public class VoucherStaxBuilderTest {
 
-    private static final String XML_FILE = "resources/data/vouchers.xml";
+    private static final String XML_FILE = "resources/vouchers.xml";
 
     private VoucherStaxBuilder voucherStaxBuilder;
 
@@ -21,7 +20,7 @@ public class VoucherStaxBuilderTest {
         voucherStaxBuilder = new VoucherStaxBuilder();
     }
     @Test
-    public void buildVoucherStaxBuilderTest() throws VoucherException {
+    public void buildVoucherStaxBuilderTest() {
 
 
         Voucher voucher1 = new Voucher();
@@ -56,7 +55,7 @@ public class VoucherStaxBuilderTest {
         voucher2.getHotelCharacteristic().setAirConditioner("yes");
 
 
-        Set<Voucher> expected = new HashSet<Voucher>();
+        Set<Voucher> expected = new HashSet<>();
         expected.add(voucher1);
         expected.add(voucher2);
 
